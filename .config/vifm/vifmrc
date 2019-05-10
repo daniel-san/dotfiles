@@ -146,7 +146,7 @@ command! reload :write | restart
 command! gvim gvim %f &
 command! mpv mpv --player-operation-mode=pseudo-gui %f &
 command! untar tar -xvf %f
-command! term xfce4-terminal --working-directory=%d/%f &
+command! term xfce4-terminal --working-directory=%d &
 
 
 " ------------------------------------------------------------------------------
