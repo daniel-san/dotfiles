@@ -143,9 +143,11 @@ command! vgrep vim "+grep %a"
 command! reload :write | restart
 
 "Custom Commands
+command! runb !! ./%f &
 command! gvim gvim %f &
 command! mpv mpv --player-operation-mode=pseudo-gui %f &
 command! untar tar -xvf %f
+command! unzip unzip %f
 command! term xfce4-terminal --working-directory=%d &
 
 
@@ -209,7 +211,7 @@ filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
          \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
          \*.as[fx]
         \ {View using mpv}
-        \ mpv --player-operation-mode=pseudo-gui %f,
+        \ mpv --player-operation-mode=pseudo-gui %f &,
         \ {View using ffplay}
         \ ffplay -fs -autoexit %f,
         \ {View using Dragon}

@@ -26,228 +26,39 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/daniel/scripts
-	..
-0
-d/home/daniel
-	Repos
-9
-d/home/daniel/Repos
-	scripts
+d/home/daniel/.e/e
+	fileman
+4
+d/home/daniel/.e/e/fileman
+	favorites
 1
-d/home/daniel/Repos/scripts
-	..
-0
-d/home/daniel/Repos
-	scripts
+d/home/daniel/.e/e/fileman/favorites
+	.order
+1
+d/home/daniel/.e/e/fileman
+	favorites
+1
+d/home/daniel/.e/e
+	fileman
+4
+d/home/daniel/.e
+	e
 1
 d/home/daniel
 	scripts
 13
 d/home/daniel/scripts
-	screencast_pulse.sh
-7
-d/home/daniel
-	.config
-3
-d/home/daniel/.config
-	vifm
-14
-d/home/daniel/.config/vifm
-	colors
-1
-d/home/daniel/.config/vifm/colors
 	..
 0
-d/home/daniel/.config/vifm
-	vifmrc
-5
-d/home/daniel/.config
-	pcmanfm
-4
 d/home/daniel
-	Pictures
-6
-d/home/daniel/Pictures
-	Wallpapers
-1
-d/home/daniel/Pictures/Wallpapers
-	menu-background.jpg
-1
-d/home/daniel/Pictures
-	Wallpapers
-1
-d/home/daniel
-	Downloads
-3
+	scripts
+13
 d/home
 	daniel
 1
 d/home/daniel
 	.config
-3
-d/home/daniel/.config
-	vifm
-8
-d/home/daniel/.config/vifm
-	scripts
-2
-d/home/daniel/.config/vifm/scripts
-	..
-0
-d/home/daniel/.config/vifm
-	scripts
-2
-d/home/daniel/.config
-	vifm
-8
-d/home/daniel/.config/vifm
-	colors
-1
-d/home/daniel/.config/vifm/colors
-	dracula.vifm
-2
-d/home/daniel/.config/vifm
-	scripts
-2
-d/home/daniel/.config
-	vifm
-8
-d/home/daniel/.config/vifm
-	scripts
-2
-d/home/daniel/.config/vifm/scripts
-	..
-0
-d/home/daniel/.config/vifm
-	scripts
-2
-d/home/daniel/.config/vifm/scripts
-	vifmrun
-3
-d/home/daniel/.config/vifm
-	vifminfo
 4
-d/home/daniel/.config
-	vifm
-8
-d/home/daniel/.config/vifm
-	vifminfo
-4
-d/home/daniel/.config
-	vifm
-16
-d/home/daniel/.config/vifm
-	scripts
-2
-d/home/daniel/.config
-	vifm
-16
-d/home/daniel/.config/vifm
-	colors
-1
-d/home/daniel/.config/vifm/colors
-	dracula.vifm
-2
-d/home/daniel/.config/vifm
-	scripts
-2
-d/home/daniel/.config/vifm/scripts
-	vifmrun
-3
-d/home/daniel/.config/vifm
-	scripts
-2
-d/home/daniel/.config/vifm/scripts
-	vifmrun
-3
-d/home/daniel/.config/vifm
-	scripts
-2
-d/home/daniel/.config/vifm/scripts
-	README
-1
-d/home/daniel/.config/vifm
-	scripts
-2
-d/home/daniel/.config
-	termite
-14
-d/home/daniel/.config/termite
-	config
-1
-d/home/daniel/.config
-	termite
-14
-d/home/daniel
-	Downloads
-3
-d/home/daniel/Downloads
-	Crysis.v2.0.0.7.zip
-4
-d/home/daniel
-	Downloads
-3
-d/home
-	daniel
-1
-d/home/daniel
-	Downloads
-3
-d/home/daniel/Downloads
-	Full-Dark-Red.tar.gz
-4
-d/home/daniel
-	.config
-3
-d/home/daniel/.config
-	vifm
-16
-d/home/daniel/.config/vifm
-	vifmrc
-5
-d/home/daniel/.config
-	zathura
-18
-d/home/daniel/.config/zathura
-	..
-0
-d/home/daniel/.config
-	opera
-4
-d/home/daniel/.config/opera
-	..
-0
-d/home/daniel/.config
-	openbox
-4
-d/home/daniel/.config/openbox
-	..
-0
-d/home/daniel/.config
-	i3status
-5
-d/home/daniel/.config/i3status
-	config
-1
-d/home/daniel/.config
-	lutris
-7
-d/home/daniel/.config/lutris
-	games
-1
-d/home/daniel/.config/lutris/games
-	..
-0
-d/home/daniel/.config/lutris
-	runners
-2
-d/home/daniel/.config/lutris/runners
-	..
-0
-d/home/daniel/.config/lutris
-	games
-1
 d/home/daniel/.config
 	cef_user_data
 5
@@ -261,173 +72,317 @@ d/home/daniel/.config/cef_user_data
 	Dictionaries
 1
 d/home/daniel/.config
-	cef_user_data
-5
-d/home/daniel
-	Downloads
-3
-d/home/daniel/Downloads
-	Yakusoku no Neverland
-2
-d/home/daniel/Downloads/Yakusoku no Neverland
+	fontconfig
+11
+d/home/daniel/.config/fontconfig
+	fonts.conf
+1
+d/home/daniel/.config
+	google-chrome
+14
+d/home/daniel/.config/google-chrome
+	NativeMessagingHosts
+1
+d/home/daniel/.config/google-chrome/NativeMessagingHosts
 	..
 0
-d/home/daniel/Downloads
-	Persona 3 - Movies
+d/home/daniel/.config/google-chrome
+	NativeMessagingHosts
 1
-d/home/daniel/Downloads/Persona 3 - Movies
-	Persona_3_Filme_4_NerdUai-Anbient.mkv
-2
-d/home/daniel/Downloads
-	Yakusoku no Neverland
-2
-d/home/daniel/Downloads/Yakusoku no Neverland
-	Yakusoku_no_Neverland_01_AE-Kirinashi-Anbient.mkv
-1
-d/home/daniel/Downloads
-	Boogiepop wa warawanai
-1
-d/home/daniel
-	Downloads
-3
-d/home/daniel/Downloads
-	Yakusoku no Neverland
-3
-d/home/daniel/Downloads/Yakusoku no Neverland
-	Yakusoku_no_Neverland_01_AE-Kirinashi-Anbient.mkv
-1
-d/home/daniel/Downloads
-	Boogiepop wa warawanai
-1
-d/home/daniel/Downloads/Boogiepop wa warawanai
-	..
-0
-d/home/daniel/Downloads
-	Boogiepop wa warawanai
-1
-d/home/daniel/Downloads/Boogiepop wa warawanai
-	..
-0
-d/home/daniel/Downloads
-	Boogiepop wa warawanai
-1
-d/home/daniel/Downloads/Boogiepop wa warawanai
-	..
-0
-d/home/daniel/Downloads
-	s-l300.jpg
-9
-d/home/daniel
-	.xmonad
+d/home/daniel/.config
+	gtk-2.0
 16
-d/home/daniel/.xmonad
-	xmonad.hs
-4
-d/home/daniel
+d/home/daniel/.config/gtk-2.0
 	..
 0
+d/home/daniel/.config
+	gtk-3.0
+17
+d/home/daniel/.config/gtk-3.0
+	..
+0
+d/home/daniel/.config
+	gtk-3.0
+17
+d/home/daniel/.config/gtk-3.0
+	bookmarks
+1
+d/home/daniel/.config
+	gtk-4.0
+18
+d/home/daniel/.config/gtk-4.0
+	..
+0
+d/home/daniel/.config
+	i3status
+18
+d/home/daniel/.config/i3status
+	config
+1
+d/home/daniel/.config
+	i3
+17
+d/home/daniel/.config/i3
+	..
+0
+d/home/daniel/.config
+	libfm
+18
+d/home/daniel/.config/libfm
+	..
+0
+d/home/daniel/.config
+	lutris
+18
+d/home/daniel/.config/lutris
+	runners
+2
+d/home/daniel/.config/lutris/runners
+	..
+0
+d/home/daniel/.config/lutris
+	games
+1
+d/home/daniel/.config/lutris/games
+	osu-windows-1555657738.yml
+1
+d/home/daniel/.config/lutris
+	lutris.conf
+3
+d/home/daniel/.config
+	vifm
+18
+d/home/daniel/.config/vifm
+	vifmrc
+5
+d/home/daniel/.config
+	vifm
+18
+d/home/daniel
+	.config
+4
+d/home
+	daniel
+1
+d/
+	run
+12
+d/run
+	media
+12
+d/run/media
+	daniel
+1
+d/run/media/daniel
+	OS
+2
+d/run/media/daniel/OS
+	Users
+15
+d/run/media/daniel/OS/Users
+	Home
+4
+d/run/media/daniel/OS/Users/Home
+	Documents
+12
+d/run/media/daniel/OS/Users/Home/Documents
+	GTA Projects
+8
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects
+	leadmax
+6
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax
+	app
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax/app
+	login.js
+9
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax
+	app
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects
+	loot-boxxers
+7
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers
+	public
+6
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/public
+	js
+2
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/public/js
+	..
+0
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/public
+	js
+2
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers
+	resources
+7
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources
+	js
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources/js
+	components
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources/js/components
+	BoxComponent.vue
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources/js
+	components
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources
+	js
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources/js
+	components
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources/js/components
+	BoxComponent.vue
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources/js
+	components
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources/js/components
+	ExampleComponent.vue
+2
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources/js
+	components
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources
+	js
+1
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers
+	resources
+7
+d/run/media/daniel/OS/Users/Home/Documents/GTA Projects
+	loot-boxxers
+7
+d/run/media/daniel/OS/Users/Home/Documents
+	Git projects
+9
+d/run/media/daniel/OS/Users/Home/Documents/Git projects
+	vue-projects
+8
+d/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+5
+d/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/vue-card-shuffle
+	main.js
+3
+d/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+5
+d/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/vue-card-shuffle
+	main.js
+3
+d/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	image-shuffle
+3
+d/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/image-shuffle
+	index.html
+1
+d/run/media/daniel
+	..
+0
+d/home/daniel
+	Downloads
+4
+d/home/daniel/Downloads
+	Postman
+1
+d/home/daniel/Downloads/Postman
+	..
+0
+d/home/daniel/Downloads
+	Saenai.Heroine.no.Sodatekata.full.1850587.jpg
+7
+d/home/daniel
+	Videos
+12
+d/home/daniel/Videos
+	Animes
+1
+d/home/daniel/Videos/Animes
+	Toaru Majutso no Index III
+10
+d/home/daniel/Videos/Animes/Toaru Majutso no Index III
+	Toaru_Majutsu_no_Index III_01_Eternal-Anbient.mkv
+1
+d/home/daniel/Videos/Animes
+	Toaru Majutso no Index III
+10
+d/home/daniel/Videos/Animes/Toaru Majutso no Index III
+	Toaru_Majutsu_no_Index III_01_Eternal-Anbient.mkv
+1
+d/home/daniel/Videos/Animes
+	Toaru Majutso no Index III
+10
+d/home/daniel/Videos/Animes/Toaru Majutso no Index III
+	Toaru_Majutsu_no_Index III_01_Eternal-Anbient.mkv
+1
+d/home/daniel/Videos/Animes
+	Houseki no Kuni
+5
+d/home/daniel/Videos
+	Animes
+1
 d
 
 # Right window history (oldest to newest):
-D/run/media/daniel/DATA/World of Warcraft
-	_retail_
-5
-D/run/media/daniel/DATA/World of Warcraft/_retail_
-	Screenshots
-6
-D/run/media/daniel/DATA/World of Warcraft/_retail_/Screenshots
-	WoWScrnShot_010415_173806.jpg
+D/run/media/daniel/OS/Users/Home
+	Documents
+4
+D/run/media/daniel/OS/Users/Home/Documents
+	Git projects
+4
+D/run/media/daniel/OS/Users/Home/Documents/Git projects
+	vue-projects
 8
-D/run/media/daniel/DATA/World of Warcraft/_retail_
-	Screenshots
-6
-D/run/media/daniel/DATA/World of Warcraft
-	_retail_
-5
-D/run/media/daniel/DATA
-	World of Warcraft
-7
-D/run/media/daniel
-	OS
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+4
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/vue-card-shuffle
+	index.html
 2
-D/run/media/daniel/OS
-	Users
-13
-D/run/media/daniel/OS/Users
-	Home
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+4
+D/run/media/daniel/OS/Users/Home/Documents/Git projects
+	vue-projects
+8
+D/run/media/daniel/OS/Users/Home/Documents
+	Git projects
 4
 D/run/media/daniel/OS/Users/Home
-	Pictures
-11
-D/run/media/daniel/OS/Users/Home/Pictures
-	xqc pog.jpg
-22
-D/home/daniel
-	Repos
-9
-D/run/media/daniel/OS/Users/Home/Pictures
-	xqc pog.jpg
-22
-D/run/media/daniel/OS/Users/Home
-	Pictures
-11
-D/run/media/daniel/OS/Users
-	Home
-4
-D/run/media/daniel/OS
-	Users
-13
+	Videos
+18
+D/run/media/daniel/OS/Users/Home/Videos
+	Animes
+1
+D/run/media/daniel/OS/Users/Home/Videos/Animes
+	Yakusoku no Neverland
+10
+D/run/media/daniel/OS/Users/Home/Videos/Animes/Yakusoku no Neverland
+	Yakusoku_no_Neverland_06_AE-Kirinashi-Anbient.mkv
+6
 D/run/media/daniel
 	DATA
 1
 D/run/media/daniel/DATA
-	MSOCache
-4
-D/run/media/daniel/DATA/MSOCache
-	..
-0
-D/run/media/daniel/DATA
-	MSOCache
-4
-D/run/media/daniel/DATA/MSOCache
-	..
-0
-D/run/media/daniel/DATA
-	Heroes of the Storm
-4
-D/run/media/daniel/DATA/Heroes of the Storm
-	Support
-2
-D/run/media/daniel/DATA
-	Galerians [NTSC-U] [Disc2of3] [SLUS-01098]
-4
-D/run/media/daniel/DATA/Galerians [NTSC-U] [Disc2of3] [SLUS-01098]
-	..
-0
-D/run/media/daniel/DATA
-	Epic Games
-4
-D/run/media/daniel/DATA/Epic Games
-	..
-0
-D/run/media/daniel/DATA
-	Recovery
-12
-D/run/media/daniel/DATA/Recovery
-	ntuser.sys
+	$RECYCLE.BIN
 1
-D/run/media/daniel/DATA
+D/run/media/daniel
+	DATA
+1
+D/home/daniel
+	Repos
+9
+D/home/daniel/Repos
 	..
 0
 D/home/daniel
-	Downloads
-3
-D/home/daniel/Downloads
-	s-l300.jpg
+	Videos
 11
-D/home/daniel
-	Downloads
-3
 D/home
 	daniel
 1
@@ -450,191 +405,235 @@ D/run/media/daniel/OS/Users
 	Home
 4
 D/run/media/daniel/OS/Users/Home
-	Dropbox
+	Documents
 4
-D/run/media/daniel/OS/Users/Home/Dropbox
-	Japones Online
-6
-D/run/media/daniel/OS/Users/Home/Dropbox/Japones Online
-	..
-0
-D/run/media/daniel/OS/Users/Home/Dropbox
-	Japones Online
-6
-D/run/media/daniel/OS/Users/Home
-	Dropbox
-4
-D/run/media/daniel/OS/Users/Home/Dropbox
-	Japones Online
-6
-D/run/media/daniel/OS/Users/Home/Dropbox/Japones Online
-	Modulo 1
-3
-D/run/media/daniel/OS/Users/Home/Dropbox/Japones Online/Modulo 1
-	Topico 0
-2
-D/run/media/daniel/OS/Users/Home/Dropbox/Japones Online
-	Modulo 2
-4
-D/run/media/daniel/OS/Users/Home/Dropbox/Japones Online/Modulo 2
-	Topico 5
-7
-D/run/media/daniel/OS/Users/Home/Dropbox/Japones Online/Modulo 2/Topico 5
-	html
-1
-D/run/media/daniel/OS/Users/Home/Dropbox/Japones Online/Modulo 2/Topico 5/html
-	..
-0
-D/run/media/daniel/OS/Users/Home/Dropbox/Japones Online/Modulo 2/Topico 5
-	Estudando o texto – Lição 01.pdf
-2
-D/run/media/daniel/OS/Users/Home/Dropbox/Japones Online/Modulo 2
-	Topico 5
-7
-D/run/media/daniel/OS/Users/Home/Dropbox/Japones Online
-	Modulo 2
-4
-D/run/media/daniel/OS/Users/Home/Dropbox
-	Japones Online
-6
-D/run/media/daniel/OS/Users/Home
-	Dropbox
-4
-D/run/media/daniel/OS/Users/Home/Dropbox
-	Haskell Programming from first principles.pdf
-11
-D/run/media/daniel/OS/Users/Home
-	Dropbox
-4
-D/run/media/daniel/OS/Users/Home/Dropbox
-	Apk
-1
-D/run/media/daniel/OS/Users/Home/Dropbox/Apk
-	jsonData.json
-1
-D/run/media/daniel/OS/Users/Home/Dropbox
-	Comprovantes
-2
-D/run/media/daniel/OS/Users/Home/Dropbox/Comprovantes
-	ComprovanteBB - 2019-04-16-113537.pdf
-6
-D/run/media/daniel/OS/Users/Home/Dropbox
-	Conversa com comprebel
-3
-D/run/media/daniel/OS/Users/Home/Dropbox/Conversa com comprebel
-	conversa com comprebel - 1.png
-1
-D/run/media/daniel/OS/Users/Home/Dropbox
-	Small projects
-7
-D/run/media/daniel/OS/Users/Home/Dropbox/Small projects
-	Rxjs Tests
-1
-D/run/media/daniel/OS/Users/Home/Dropbox/Small projects/Rxjs Tests
-	..
-0
-D/run/media/daniel/OS/Users/Home/Dropbox/Small projects
-	Rxjs Tests
-1
-D/run/media/daniel/OS/Users/Home/Dropbox
-	ip2location
+D/run/media/daniel/OS/Users/Home/Documents
+	Git projects
+5
+D/run/media/daniel/OS/Users/Home/Documents/Git projects
+	vue-projects
 8
-D/run/media/daniel/OS/Users/Home/Dropbox/ip2location
-	IP2Location-PHP-Module-master
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+4
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/vue-card-shuffle
+	index.html
+2
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+4
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/vue-card-shuffle
+	index.html
+2
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+4
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/vue-card-shuffle
+	index.html
+2
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	image-shuffle
+3
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/image-shuffle
+	index.html
 1
-D/run/media/daniel/OS/Users/Home/Dropbox/ip2location/IP2Location-PHP-Module-master
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+5
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/vue-card-shuffle
+	styles.css
+4
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	image-shuffle
+3
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/image-shuffle
+	index.html
+1
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+5
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/vue-card-shuffle
+	main.js
+3
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+5
+D/run/media/daniel/OS/Users/Home/Documents/Git projects
+	vue-projects
+8
+D/run/media/daniel/OS/Users/Home/Documents
+	Haganai Connect
+6
+D/run/media/daniel/OS/Users/Home/Documents/Haganai Connect
 	..
 0
-D/run/media/daniel/OS/Users/Home/Dropbox/ip2location
-	databases
-2
-D/run/media/daniel/OS/Users/Home/Dropbox/ip2location/databases
-	databases
-1
-D/run/media/daniel/OS/Users/Home/Dropbox/ip2location
-	IP2Location.php
-5
-D/run/media/daniel/OS/Users/Home/Dropbox
-	Dot-Files
+D/run/media/daniel/OS/Users/Home/Documents
+	GTA Projects
 4
-D/run/media/daniel/OS/Users/Home
-	Dropbox
-4
-D/run/media/daniel/OS/Users
-	Home
-4
-D/run/media/daniel/OS
-	Users
-13
-D/run/media/daniel
-	OS
-2
-D/run/media/daniel/OS
-	Users
-13
-D/run/media/daniel/OS/Users
-	Home
-4
-D/run/media/daniel/OS/Users/Home
-	Videos
-17
-D/run/media/daniel/OS/Users/Home/Videos
-	Animes
-1
-D/run/media/daniel/OS/Users/Home/Videos/Animes
-	Boogiepop wa warawanai
-2
-D/run/media/daniel/OS/Users/Home/Videos/Animes/Boogiepop wa warawanai
-	Boogiepop_wa_Warawanai_2019_06_Moshi-Moshi-Anbient.mkv
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects
+	..
+0
+D/run/media/daniel/OS/Users/Home/Documents
+	Haganai Connect
 6
-D/run/media/daniel/OS/Users/Home/Videos/Animes
-	Happy Sugar Life
+D/run/media/daniel/OS/Users/Home/Documents/Haganai Connect
+	..
+0
+D/run/media/daniel/OS/Users/Home/Documents
+	GTA Projects
 4
-D/run/media/daniel/OS/Users/Home/Videos/Animes/Happy Sugar Life
-	Happy_Sugar_Life_07_Eternal - Anbient.mkv
-7
-D/run/media/daniel/OS/Users/Home/Videos/Animes
-	Happy Sugar Life
-4
-D/run/media/daniel/OS/Users/Home/Videos
-	Animes
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects
+	leadmax
+6
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax
+	app
 1
-D/run/media/daniel/OS/Users/Home
-	Pictures
-12
-D/run/media/daniel/OS/Users/Home/Pictures
-	blizzcon.png
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax/app
+	builder
+2
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax/app/builder
+	..
+0
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax/app
+	index.html
+8
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax
+	app
+1
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects
+	leadmax
+6
+D/run/media/daniel/OS/Users/Home/Documents
+	Git projects
 5
-D/run/media/daniel/OS/Users/Home
-	Dropbox
+D/run/media/daniel/OS/Users/Home/Documents/Git projects
+	vue-projects
+8
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+5
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/vue-card-shuffle
+	main.js
+3
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+5
+D/run/media/daniel/OS/Users/Home/Documents/Git projects
+	vue-projects
+8
+D/run/media/daniel/OS/Users/Home/Documents
+	GTA Projects
 4
-D/run/media/daniel/OS/Users/Home/Dropbox
-	GA_MST_Reading_File.tar.gz
-17
-D/run/media/daniel/OS/Users/Home
-	Dropbox
-14
-D/run/media/daniel/OS/Users
-	Home
-4
-D/run/media/daniel/OS/Users/Home
-	Pictures
-22
-D/run/media/daniel/OS/Users/Home/Pictures
-	conversa com comprebel - 3.png
-4
-D/run/media/daniel
-	DATA
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects
+	leadmax
+6
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax
+	app
 1
-D/run/media/daniel/DATA
-	Videos
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax/app
+	assets
+1
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax/app/assets
+	..
+0
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax/app
+	builder
+2
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax/app/builder
+	..
+0
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax/app
+	routes.js
+12
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/leadmax
+	app
+1
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects
+	leadmax
+6
+D/run/media/daniel/OS/Users/Home/Documents
+	Git projects
+5
+D/run/media/daniel/OS/Users/Home/Documents/Git projects
+	vue-projects
+8
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+5
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/vue-card-shuffle
+	main.js
+3
+D/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects
+	vue-card-shuffle
+5
+D/run/media/daniel/OS/Users/Home/Documents/Git projects
+	vue-projects
+8
+D/run/media/daniel/OS/Users/Home/Documents
+	GTA Projects
 4
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects
+	loot-boxxers
+7
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers
+	resources
+7
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources
+	js
+1
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources/js
+	components
+1
+D/run/media/daniel/OS/Users/Home/Documents/GTA Projects/loot-boxxers/resources/js/components
+	BoxComponent.vue
+1
+D/run/media/daniel
+	..
+0
+D/run/media
+	daniel
+1
+D/run/media/daniel
+	..
+0
+D/home/daniel
+	Apps
+1
+D/home/daniel/Apps
+	Rambox-0.6.7-linux-x86_64.AppImage
+1
+D/home/daniel
+	Downloads
+4
+D/home/daniel/Downloads
+	com.github.themix_project.Oomox.flatpakref
+9
+D/home/daniel
+	Apps
+1
+D/home/daniel/Apps
+	Rambox-0.6.7-linux-x86_64.AppImage
+1
+D/home/daniel
+	Apps
+1
+D/home/daniel/Apps
+	Rambox-0.6.7-linux-x86_64.AppImage
+1
+D/home/daniel
+	.config
+4
+D/home/daniel/.config
+	vifm
+7
+D/home/daniel/.config/vifm
+	vifmrc
+5
 D
 
 # Command line history (oldest to newest):
 :touch dracula.vifm
 :exec gvim
-:run
 :colorscheme dracula
 :exec 'gvim' 
 :execute
@@ -644,23 +643,35 @@ D
 :run 'gvim'
 :touch vifmrun
 :touch vifmimg
-:Q
 :bookmark
 :help
 :gvim
 :touch zathurarc
-:move
+:nmap
+:mkdir image-shuffle
+:touch main.js
+:touch shuffle.js
 :term
+:mkdir Apps
+:!bash
+:run !!
+:mkdir "Toaru Majutso no Index III"
+:move
+:mpv
+:run
+:Q
+:runb
 :q
 
 # Search history (oldest to newest):
 
 # Prompt history (oldest to newest):
+parc-red-dark.rasi
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/daniel/.local/share/vifm/Trash/000_Boogiepop wa warawanai
+""/run/media/daniel/OS/Users/Home/Documents/Git projects/vue-projects/vue-card-shuffle/styles.css
 
 # Directory stack (oldest to newest):
 
@@ -675,10 +686,10 @@ t/home/daniel/.local/share/vifm/Trash/000_Boogiepop wa warawanai
 # State:
 f
 i1
-[.0
+[.1
 [F
 F
 I1
-].1
+].0
 ]F
 s0
