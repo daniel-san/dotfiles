@@ -277,7 +277,7 @@ bindsym Print exec xfce4-screenshooter
 
 # Autostart apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id "compton"
+exec --no-startup-id "compton --config /home/daniel/.config/compton/compton.conf"
 exec --no-startup-id nm-applet
 exec "xrandr --output DVI-D-0 --primary --auto --right-of HDMI-1"
 exec --no-startup-id "nitrogen --restore"
