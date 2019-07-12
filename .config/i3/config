@@ -208,7 +208,7 @@ set $barely_white       #FDF6E3
 
 # DT Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          $dark_grey $dark_grey $white $barely_white
+  client.focused          $red $xmonad_grey $red $barely_white
   client.focused_inactive $xmonad_grey $xmonad_grey $red $middle_grey
   client.unfocused        $xmonad_grey $xmonad_grey $red $middle_grey
   client.urgent           $orange $barely_white $red $blue
@@ -227,7 +227,7 @@ bar {
         background $xmonad_grey
         separator #757575
         #                  border             background         text
-        focused_workspace  $dark_grey          $dark_grey          $text-color
+        focused_workspace  $red          $xmonad_grey          $text-color
         inactive_workspace $xmonad_grey $xmonad_grey $red
         urgent_workspace   $orange   $orange   $text-color
     }
