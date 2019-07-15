@@ -171,14 +171,14 @@ set $indicator-color     #a0a0a0
 #Colors
 set $blue               #82AAFF
 set $red                #CC575D
-set $other_red 		    #EC5252	
+set $other_red 	        #EC5252	
 set $grey               #556064
 set $middle_grey        #454948
 set $dark_grey          #2F3D44
 set $darker_grey        #2B2C2B
 set $xmonad_grey        #292d3e
 set $light_purple       #AD69AF
-set $blue               #268BD2
+set $darkblue           #268BD2
 set $black              #000000
 set $barely_black       #0C0C0C
 set $orange             #CB4B16
