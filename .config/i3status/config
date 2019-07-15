@@ -10,6 +10,8 @@
 
 general {
     interval = 1
+    output_format = "i3bar"
+    markup = "pango"
     colors = true
     color_good = '#88b090'
     color_degraded = '#ccdc90'
@@ -17,6 +19,7 @@ general {
 }
 
 order += "volume master"
+order += "cpu_temperature 0"
 order += "disk /"
 #order += "disk /data"
 #order += "disk /home"
@@ -26,9 +29,9 @@ order += "disk /"
 #order += "wireless wlp4s0"
 #order += "ethernet enp5s0"
 #order += "battery 0"
-order += "cpu_temperature 0"
 order += "cpu_usage 0"
-order += "load"
+#order += "load"
+order += "memory"
 order += "tztime local"
 
 #wireless wlp4s0 {
@@ -66,15 +69,20 @@ run_watch VPN {
 
 #%Y-%m-%d %H:%M:%S'
 tztime local {
-    format = ": %d/%m/%Y  : %H:%M"
+    format = "<span color='#a3f7ff'>: %time </span>"
+    format_time = "%d/%m/%Y  : %H:%M"
 }
 
 load {
     format = ": %1min"
 }
 
+memory {
+    format = "<span color='#f07178'>: %percentage_used </span>"
+}
+
 cpu_usage {
-    format = ": %usage"
+    format = "<span color='#ffe585'>: %usage</span>"
 }
 
 cpu_temperature 0 {
@@ -82,7 +90,7 @@ cpu_temperature 0 {
 }
 
 disk "/" {
-    format = ": %avail"
+    format = "<span color='#82aaff'>: %used/%total</span>"
     prefix_type	= custom
     low_threshold = 20
     threshold_type = percentage_avail
