@@ -224,6 +224,7 @@ set $barely_white       #FDF6E3
 bar {
     status_command i3status
     font pango:mononoki 13
+    tray_output primary
 
 	colors {
         background $xmonad_grey
