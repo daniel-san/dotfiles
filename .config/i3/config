@@ -35,7 +35,7 @@ bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Shift+q kill
 
 #application launchers
-set $rofi "rofi -show run"
+set $rofi "rofi -show combi -combi-modi run,drun"
 set $dmenu "i3-dmenu-desktop"
 
 # start dmenu (a program launcher)
