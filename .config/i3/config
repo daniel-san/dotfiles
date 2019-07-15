@@ -169,6 +169,7 @@ set $urgent-bg-color     #e53935
 set $indicator-color     #a0a0a0      
 
 #Colors
+set $blue               #82AAFF
 set $red                #CC575D
 set $other_red 		    #EC5252	
 set $grey               #556064
@@ -181,6 +182,7 @@ set $blue               #268BD2
 set $black              #000000
 set $barely_black       #0C0C0C
 set $orange             #CB4B16
+set $yellow             #FFe585
 set $white              #FFFFFF
 set $barely_white       #FDF6E3
 
@@ -227,8 +229,9 @@ bar {
         background $xmonad_grey
         separator #757575
         #                  border             background         text
-        focused_workspace  $red          $xmonad_grey          $text-color
-        inactive_workspace $xmonad_grey $xmonad_grey $red
+        focused_workspace  $red      $xmonad_grey       $text-color
+        active_workspace   $blue     $xmonad_grey       $red
+        inactive_workspace $xmonad_grey $xmonad_grey    $red
         urgent_workspace   $orange   $orange   $text-color
     }
 }

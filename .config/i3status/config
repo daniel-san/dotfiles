@@ -67,7 +67,6 @@ run_watch VPN {
     pidfile = "/var/run/vpnc/pid"
 }
 
-#%Y-%m-%d %H:%M:%S'
 tztime local {
     format = "<span color='#a3f7ff'>: %time </span>"
     format_time = "%d/%m/%Y  : %H:%M"
