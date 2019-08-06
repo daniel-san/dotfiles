@@ -28,8 +28,11 @@ font pango:mononoki 12
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# default terminal
+set $terminal st
+
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec $terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -275,7 +278,7 @@ bindsym $mod+F8 exec mocp --next
 # App shortcuts
 bindsym $mod+w exec "/usr/bin/chromium"
 bindsym $mod+n exec "/usr/bin/pcmanfm"
-bindsym $mod+m exec "xfce4-terminal -e /home/daniel/.config/vifm/scripts/vifmrun"
+bindsym $mod+m exec $terminal -e /home/daniel/.config/vifm/scripts/vifmrun
 bindsym Print exec xfce4-screenshooter
 
 # Redirect sound to headphones
