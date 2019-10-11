@@ -29,7 +29,7 @@ set softtabstop=4
 set expandtab
 set ruler
 set nocursorline
-set colorcolumn=80
+set colorcolumn=80,120
 set showmatch
 set showmode
 set nowrap
