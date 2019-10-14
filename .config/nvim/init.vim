@@ -8,6 +8,8 @@ Plug 'ntpeters/vim-better-whitespace' " Linhas de identação e remoção de esp
 Plug 'vim-airline/vim-airline' " status line
 Plug 'vim-airline/vim-airline-themes' " status line tunada
 Plug 'editorconfig/editorconfig-vim'
+Plug 'honza/vim-snippets', { 'as': 'vim-snippets'}
+
 call plug#end()
 
 "Options
@@ -29,10 +31,11 @@ set softtabstop=4
 set expandtab
 set ruler
 set nocursorline
-set colorcolumn=80,120
+set colorcolumn=80
 set showmatch
 set showmode
 set nowrap
+"set termguicolors
 if has("gui_running")
   set guifont=mononoki\ 14
 endif
@@ -68,6 +71,9 @@ map <C-p> "+p
 map <F6> :setlocal spell! spelllang=en_us<CR>
 map <F7> :setlocal spell! spelllang=pt_br<CR>
 
+"Mappings for termguicolors
+map <F9> :set termguicolors<CR>
+map <F10> :set termguicolors!<CR>
 
 "Mappings for ranger
 nnoremap <silent> - :Ranger<CR>
@@ -79,3 +85,18 @@ nnoremap <silent> <Leader>f :tabnew \| Ranger<CR>
 
 "Open ranger in a new split window
 nnoremap <silent> <Leader>v :vsp \| RangerCurrentFile<CR>
+
+" Use <C-l> for trigger snippet expand.
+imap <C-l> <Plug>(coc-snippets-expand)
+
+" Use <C-j> for select text for visual placeholder of snippet.
+vmap <C-j> <Plug>(coc-snippets-select)
+
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<c-j>'
+
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<c-k>'
+
+" Use <C-j> for both expand and jump (make expand higher priority.)
+imap <C-j> <Plug>(coc-snippets-expand-jump)
