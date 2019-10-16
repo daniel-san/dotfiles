@@ -9,7 +9,7 @@ Plug 'vim-airline/vim-airline' " status line
 Plug 'vim-airline/vim-airline-themes' " status line tunada
 Plug 'editorconfig/editorconfig-vim'
 Plug 'honza/vim-snippets', { 'as': 'vim-snippets'}
-
+Plug 'APZelos/blamer.nvim'
 call plug#end()
 
 "Options
@@ -58,6 +58,8 @@ if has("autocmd")
 
 endif
 
+let g:blamer_enabled = 1
+
 "Theme
 set background=light
 colorscheme dracula
@@ -72,10 +74,9 @@ map <F6> :setlocal spell! spelllang=en_us<CR>
 map <F7> :setlocal spell! spelllang=pt_br<CR>
 
 "Mappings for termguicolors
-map <F9> :set termguicolors<CR>
 map <F10> :set termguicolors!<CR>
 
-"Mappings for ranger
+" ========== Ranger Mappings ==========
 nnoremap <silent> - :Ranger<CR>
 nnoremap <silent> <Leader>r :RangerCurrentFile<CR>
 
@@ -86,6 +87,7 @@ nnoremap <silent> <Leader>f :tabnew \| Ranger<CR>
 "Open ranger in a new split window
 nnoremap <silent> <Leader>v :vsp \| RangerCurrentFile<CR>
 
+" ========== CocSnippet Mappings ==========
 " Use <C-l> for trigger snippet expand.
 imap <C-l> <Plug>(coc-snippets-expand)
 
@@ -100,3 +102,4 @@ let g:coc_snippet_prev = '<c-k>'
 
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <C-j> <Plug>(coc-snippets-expand-jump)
+
