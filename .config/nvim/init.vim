@@ -9,6 +9,7 @@ Plug 'vim-airline/vim-airline' " status line
 Plug 'vim-airline/vim-airline-themes' " status line tunada
 Plug 'editorconfig/editorconfig-vim'
 Plug 'honza/vim-snippets', { 'as': 'vim-snippets'}
+Plug 'mhinz/vim-startify',
 Plug 'APZelos/blamer.nvim'
 call plug#end()
 
@@ -31,7 +32,7 @@ set softtabstop=4
 set expandtab
 set ruler
 set nocursorline
-set colorcolumn=80
+set colorcolumn=80,120
 set showmatch
 set showmode
 set nowrap
@@ -103,3 +104,5 @@ let g:coc_snippet_prev = '<c-k>'
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <C-j> <Plug>(coc-snippets-expand-jump)
 
+" ========== Coc Explorer ==========
+nmap <Leader>e :CocCommand explorer<CR>
