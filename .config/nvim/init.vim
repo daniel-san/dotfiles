@@ -59,10 +59,12 @@ if has("autocmd")
 
 endif
 
+let s:default_path = escape(&path, '\ ') " store default value of 'path'
+
 let g:blamer_enabled = 1
 
 "Theme
-set background=light
+set background=dark
 colorscheme dracula
 highlight ColorColumn ctermbg=1
 highlight Normal ctermbg=none
@@ -86,7 +88,11 @@ nnoremap <silent> <Leader>t :tabnew \| RangerCurrentFile<CR>
 nnoremap <silent> <Leader>f :tabnew \| Ranger<CR>
 
 "Open ranger in a new split window
+" Ranger on Vertial Split
 nnoremap <silent> <Leader>v :vsp \| RangerCurrentFile<CR>
+
+" Ranger on Horizontal Split
+nnoremap <silent> <Leader>h :split \| RangerCurrentFile<CR>
 
 " ========== CocSnippet Mappings ==========
 " Use <C-l> for trigger snippet expand.
