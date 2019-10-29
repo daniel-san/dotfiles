@@ -79,6 +79,10 @@ map <F7> :setlocal spell! spelllang=pt_br<CR>
 "Mappings for termguicolors
 map <F10> :set termguicolors!<CR>
 
+"Integrated terminal
+map <F4> :tabnew \| :terminal<CR>
+map <Leader><F4> :vsp \| :terminal<CR>
+
 " ========== Ranger Mappings ==========
 nnoremap <silent> - :Ranger<CR>
 nnoremap <silent> <Leader>r :RangerCurrentFile<CR>
