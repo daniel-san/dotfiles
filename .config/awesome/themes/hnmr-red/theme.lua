@@ -16,6 +16,7 @@ local math, string, os = math, string, os
 local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local black                                     = "#000000"
+local dark_gray                                 = "#292D3E"
 local myred                                     = "#C93648"
 local dark_blue                                 = "#497B96"
 local light_blue                                = "#889FA7"
@@ -27,11 +28,11 @@ theme.taglist_font                              = "mononoki 14"
 theme.fg_normal                                 = "#FEFEFE"
 theme.fg_focus                                  = myred
 theme.fg_urgent                                 = "#b74822"
-theme.bg_normal                                 = "#000000"
-theme.bg_focus                                  = "#1E2320"
+theme.bg_normal                                 = dark_gray
+theme.bg_focus                                  = dark_gray --"#1E2320"
 theme.bg_urgent                                 = "#3F3F3F"
 theme.taglist_fg_focus                          = myred
-theme.tasklist_bg_focus                         = "#000000"
+theme.tasklist_bg_focus                         = dark_gray
 theme.tasklist_fg_focus                         = myred
 theme.border_width                              = dpi(2)
 theme.border_normal                             = "#3F3F3F"
@@ -418,10 +419,10 @@ function theme.at_screen_connect(s)
             arrow("#889FA7", myred),
             wibox.container.background(wibox.container.margin(wibox.widget { tempicon, temp.widget, layout = wibox.layout.align.horizontal }, dpi(4), dpi(4)), myred),
             arrow(myred, "#889FA7"),
-            wibox.container.background(wibox.container.margin(wibox.widget { weathericon, theme.weather.widget, layout = wibox.layout.align.horizontal }, dpi(3), dpi(3)), "#889FA7"),
-            arrow("#889FA7", myred),
-            wibox.container.background(wibox.container.margin(wibox.widget { baticon, bat.widget, layout = wibox.layout.align.horizontal }, dpi(3), dpi(3)), myred),
-            arrow(myred, "#889FA7"),
+            --wibox.container.background(wibox.container.margin(wibox.widget { weathericon, theme.weather.widget, layout = wibox.layout.align.horizontal }, dpi(3), dpi(3)), "#889FA7"),
+            --arrow("#889FA7", myred),
+            --wibox.container.background(wibox.container.margin(wibox.widget { baticon, bat.widget, layout = wibox.layout.align.horizontal }, dpi(3), dpi(3)), myred),
+            --arrow(myred, "#889FA7"),
             wibox.container.background(wibox.container.margin(wibox.widget { nil, neticon, net.widget, layout = wibox.layout.align.horizontal }, dpi(3), dpi(3)), "#889FA7"),
             arrow("#889FA7", myred),
             wibox.container.background(wibox.container.margin(clock, dpi(4), dpi(8)), myred),
