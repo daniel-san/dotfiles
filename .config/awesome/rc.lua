@@ -335,8 +335,10 @@ globalkeys = my_table.join(
         {description = mailclient , group = "function keys" }),
     awful.key({ modkey }, "F10", function () awful.util.spawn( mediaplayer ) end,
         {description = mediaplayer , group = "function keys" }),
-    awful.key({ modkey }, "F11", function () awful.util.spawn( "rofi -show run -fullscreen" ) end,
-        {description = "rofi fullscreen" , group = "function keys" }),
+    awful.key({ modkey }, "F11", function () awful.util.spawn( "/home/daniel/scripts/redshift.sh" ) end,
+        {description = "change redshift color value" , group = "function keys" }),
+    awful.key({ modkey }, "F12", function () awful.util.spawn( "/home/daniel/scripts/bookmarks.sh" ) end,
+        {description = "bookmarks script" , group = "function keys" }),
     
     -- super + ...
     awful.key({ modkey }, "e", function () awful.util.spawn( editorgui ) end,
