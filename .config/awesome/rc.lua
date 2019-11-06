@@ -787,7 +787,7 @@ globalkeys = my_table.join(
               {description = "show the menubar", group = "super"})
     --]]
 
-    awful.key({ altkey }, "x",
+    awful.key({ modkey, altkey }, "x",
               function ()
                   awful.prompt.run {
                     prompt       = "Run Lua code: ",
