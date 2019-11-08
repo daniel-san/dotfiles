@@ -11,7 +11,7 @@ function run {
 run "nm-applet"
 #run "caffeine"
 #run "pamac-tray"
-run "variety"
+run "variety || nitrogen --restore"
 #run "xfce4-power-manager"
 #run "blueberry-tray"
 run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
