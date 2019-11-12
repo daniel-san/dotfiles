@@ -11,6 +11,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'honza/vim-snippets', { 'as': 'vim-snippets'}
 Plug 'mhinz/vim-startify',
 Plug 'APZelos/blamer.nvim'
+Plug 'wakatime/vim-wakatime'
+Plug 'chriskempson/base16-vim'
 call plug#end()
 
 "Options
@@ -68,6 +70,12 @@ set background=dark
 colorscheme dracula
 highlight ColorColumn ctermbg=1
 highlight Normal ctermbg=none
+
+"Base16 theme
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-p> "+p
