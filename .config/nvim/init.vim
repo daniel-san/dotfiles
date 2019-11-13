@@ -11,7 +11,14 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'honza/vim-snippets', { 'as': 'vim-snippets'}
 Plug 'mhinz/vim-startify',
 Plug 'APZelos/blamer.nvim'
+Plug 'wakatime/vim-wakatime'
+Plug 'joshdick/onedark.vim'
+Plug 'chriskempson/base16-vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
+
+"===============================================================================
 
 "Options
 set encoding=utf-8
@@ -36,6 +43,7 @@ set colorcolumn=80,120
 set showmatch
 set showmode
 set nowrap
+
 "set termguicolors
 if has("gui_running")
   set guifont=mononoki\ 14
@@ -59,6 +67,50 @@ if has("autocmd")
 
 endif
 
+"===============================================================================
+
+" FZF Stuff
+" This is the default extra key bindings
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+" Default fzf layout
+" - down / up / left / right
+let g:fzf_layout = { 'down': '~40%' }
+
+" In Neovim, you can set up fzf window using a Vim command
+let g:fzf_layout = { 'window': 'enew' }
+let g:fzf_layout = { 'window': '-tabnew' }
+let g:fzf_layout = { 'window': '10new' }
+
+" Customize fzf colors to match your color scheme
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+" Enable per-command history.
+" CTRL-N and CTRL-P will be automatically bound to next-history and
+" previous-history instead of down and up. If you don't like the change,
+" explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
+let g:fzf_history_dir = '~/.local/share/fzf-history'
+
+nnoremap <leader>o :<C-u>Files<cr>
+
+"===============================================================================
+
 let s:default_path = escape(&path, '\ ') " store default value of 'path'
 
 let g:blamer_enabled = 1
@@ -68,6 +120,11 @@ set background=dark
 colorscheme dracula
 highlight ColorColumn ctermbg=1
 highlight Normal ctermbg=none
+
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-p> "+p
@@ -82,6 +139,8 @@ map <F10> :set termguicolors!<CR>
 "Integrated terminal
 map <F4> :tabnew \| :terminal<CR>
 map <Leader><F4> :vsp \| :terminal<CR>
+
+"===============================================================================
 
 " ========== Ranger Mappings ==========
 nnoremap <silent> - :Ranger<CR>
