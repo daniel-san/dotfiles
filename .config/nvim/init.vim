@@ -12,7 +12,6 @@ Plug 'honza/vim-snippets', { 'as': 'vim-snippets'}
 Plug 'mhinz/vim-startify',
 Plug 'APZelos/blamer.nvim'
 Plug 'wakatime/vim-wakatime'
-Plug 'joshdick/onedark.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -121,6 +120,7 @@ colorscheme dracula
 highlight ColorColumn ctermbg=1
 highlight Normal ctermbg=none
 
+"Base16 theme
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
