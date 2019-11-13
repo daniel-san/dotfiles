@@ -68,7 +68,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git wakatime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,17 +99,22 @@ export EDITOR=nvim
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=$PATH:$HOME/.config/composer/vendor/bin
+export PATH=$PATH:$HOME/.config/composer/vendor/bin:$HOME/scripts:$HOME/.local
 alias ls="exa"
 alias vim="nvim"
+alias vifm="/home/daniel/.config/vifm/scripts/vifmrun"
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# Xresources
+xrdb /home/daniel/.Xresources
 
 ### Added by Zplugin's installer
-source '/home/daniel/.zplugin/bin/zplugin.zsh'
+source "$HOME/.zplugin/bin/zplugin.zsh"
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 ### End of Zplugin installer's chunk
 
-#zplugins
+# Zplugins
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
 zplugin light zdharma/fast-syntax-highlighting
