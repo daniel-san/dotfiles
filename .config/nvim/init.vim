@@ -129,6 +129,8 @@ colorscheme dracula
 highlight ColorColumn ctermbg=1
 highlight Normal ctermbg=none
 
+set termguicolors
+
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
