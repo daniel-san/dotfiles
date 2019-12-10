@@ -19,6 +19,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 call plug#end()
 
+runtime _configs/coc.vim
+
 "===============================================================================
 
 "Options
