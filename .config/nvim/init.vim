@@ -1,15 +1,22 @@
-call plug#begin()
+if empty(glob('$HOME/.config/nvim/autoload/plug.vim'))
+    silent !curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('$HOME/.config/nvim/plugged')
 " Use release branch
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'Raimondi/delimitMate' " Abre e fecha {}[]()
 Plug 'lokaltog/neoranger', { 'as': 'ranger' } " Ranger file manager for vim
+Plug 'mhinz/vim-signify' " adicionar marcação caso tenha mudança no git
+Plug 'mhinz/vim-startify',
 Plug 'ntpeters/vim-better-whitespace' " Linhas de identação e remoção de espaços
 Plug 'vim-airline/vim-airline' " status line
 Plug 'vim-airline/vim-airline-themes' " status line tunada
 Plug 'editorconfig/editorconfig-vim'
 Plug 'honza/vim-snippets', { 'as': 'vim-snippets'}
-Plug 'mhinz/vim-startify',
 Plug 'APZelos/blamer.nvim'
 Plug 'wakatime/vim-wakatime'
 Plug 'joshdick/onedark.vim'
@@ -17,6 +24,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'jremmen/vim-ripgrep'
 call plug#end()
 
 runtime _configs/coc.vim
