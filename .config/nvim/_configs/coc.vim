@@ -30,7 +30,7 @@ inoremap <silent><expr> <Tab>
     \ pumvisible() ? "\<C-n>" :
     \ <SID>check_back_space() ? "\<Tab>" :
     \ coc#refresh()
-inoremap <silent><expr> <C-Space> coc#refresh()
+inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 nnoremap <silent> <leader>ch :call CocActionAsync('doHover')<CR>

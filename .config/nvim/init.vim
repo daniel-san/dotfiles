@@ -125,6 +125,20 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 nnoremap <leader>o :<C-u>Files<cr>
 
+command! -bang -nargs=* FRg
+   \ call fzf#vim#grep(
+       \ 'rg --column --line-number --no-heading --color=always --smart-case '.<q-args>, 1,
+       \ <bang>0 ? fzf#vim#with_preview('down:80%')
+               \ : fzf#vim#with_preview('right:50%:hidden', '?'),
+       \ <bang>0)
+
+" Search the word under cursor with ripgrep
+map <F2> :Rg<CR>
+" Regular ripgrep search
+map <F3> :Rg 
+" Regular 'ripgrep' search using fzf
+map <leader><space> :FRg 
+
 "===============================================================================
 
 "let s:default_path = escape(&path, '\ ') " store default value of 'path'
