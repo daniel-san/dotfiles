@@ -408,7 +408,7 @@ globalkeys = my_table.join(
         {description = "Pamac Manager", group = "alt+ctrl"}),
 
     -- alt + ...
-    awful.key({ altkey, "Shift"   }, "t", function () awful.spawn.with_shell( "variety -t  && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&" ) end,
+    --[[awful.key({ altkey, "Shift"   }, "t", function () awful.spawn.with_shell( "variety -t  && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&" ) end,
         {description = "Pywal Wallpaper trash", group = "altkey"}),
     awful.key({ altkey, "Shift"   }, "n", function () awful.spawn.with_shell( "variety -n  && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&" ) end,
         {description = "Pywal Wallpaper next", group = "altkey"}),
@@ -436,6 +436,7 @@ globalkeys = my_table.join(
         {description = "Gmrun", group = "altkey"}),
     awful.key({ altkey }, "F3", function () awful.util.spawn( "xfce4-appfinder" ) end,
         {description = "Xfce appfinder", group = "altkey"}),
+    ]]--
 
     -- screenshots
     awful.key({ }, "Print", function () awful.util.spawn("scrot 'ArcoLinuxD-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'") end,
