@@ -171,6 +171,7 @@ map <F10> :set termguicolors!<CR>
 "Integrated terminal
 map <F4> :tabnew \| :terminal<CR>
 map <Leader><F4> :vsp \| :terminal<CR>
+map <Leader>4 :bot 10split \| :terminal <CR>
 
 "===============================================================================
 
