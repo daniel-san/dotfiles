@@ -573,6 +573,10 @@ globalkeys = my_table.join(
               {description = "focus the next screen", group = "screen"}),
     awful.key({ modkey, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
               {description = "focus the previous screen", group = "screen"}),
+    awful.key({ modkey, }, ".", function () awful.screen.focus_relative( 1) end,
+              {description = "focus the next screen", group = "screen"}),
+    awful.key({ modkey, }, ",", function () awful.screen.focus_relative(-1) end,
+              {description = "focus the previous screen", group = "screen"}),
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
               {description = "jump to urgent client", group = "client"}),
     awful.key({ modkey1,           }, "Tab",
@@ -583,6 +587,10 @@ globalkeys = my_table.join(
             end
         end,
         {description = "go back", group = "client"}),
+
+     -- Move client to next screen.
+    awful.key({ modkey, "Shift" }, ".", function () awful.client.movetoscreen() end,
+                        {description = "Move client to next screen", group = "client"}),
 
     -- Show/Hide Wibox
     awful.key({ modkey }, "b", function ()
