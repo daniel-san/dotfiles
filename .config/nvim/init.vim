@@ -25,6 +25,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'jremmen/vim-ripgrep'
+Plug 'Chiel92/vim-autoformat'
 call plug#end()
 
 runtime _configs/coc.vim
@@ -170,8 +171,15 @@ map <F10> :set termguicolors!<CR>
 
 "Integrated terminal
 map <F4> :tabnew \| :terminal<CR>
-map <Leader><F4> :vsp \| :terminal<CR>
+map <S-F4> :vsp \| :terminal<CR>
 map <Leader>4 :bot 10split \| :terminal <CR>
+
+"moving tabs
+nmap <F12> :tabmove +1 <CR>
+nmap <F11> :tabmove -1 <CR>
+
+"kitty specific
+map <F16> :vsp \| :terminal<CR>
 
 "===============================================================================
 
