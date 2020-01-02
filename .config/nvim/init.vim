@@ -134,11 +134,14 @@ command! -bang -nargs=* FRg
        \ <bang>0)
 
 " Search the word under cursor with ripgrep
-map <F2> :Rg<CR>
+map <S-F3> :Rg<CR>
+map <F15> :Rg<CR>
+
 " Regular ripgrep search
 map <F3> :Rg 
+
 " Regular 'ripgrep' search using fzf
-map <leader><space> :FRg 
+nmap <leader><space> :FRg 
 
 "===============================================================================
 
@@ -163,23 +166,27 @@ vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-p> "+p
 
 "Spell checker
-map <F6> :setlocal spell! spelllang=en_us<CR>
-map <F7> :setlocal spell! spelllang=pt_br<CR>
+nmap <F7> :setlocal spell! spelllang=en_us<CR>
+nmap <F8> :setlocal spell! spelllang=pt_br<CR>
 
 "Mappings for termguicolors
 map <F10> :set termguicolors!<CR>
 
 "Integrated terminal
-map <F4> :tabnew \| :terminal<CR>
-map <S-F4> :vsp \| :terminal<CR>
-map <Leader>4 :bot 10split \| :terminal <CR>
+nmap <F4> :tabnew \| :terminal<CR>
+nmap <S-F4> :vsp \| :terminal<CR>
+nmap <Leader>4 :bot 10split \| :terminal <CR>
 
-"moving tabs
-nmap <F12> :tabmove +1 <CR>
-nmap <F11> :tabmove -1 <CR>
+"Tab navigation
+nmap <silent><F1> :tabprev<CR>
+nmap <silent><F2> :tabnext<CR>
+
+"Moving tabs
+nmap <silent><F12> :tabmove +1 <CR>
+nmap <silent><F11> :tabmove -1 <CR>
 
 "kitty specific
-map <F16> :vsp \| :terminal<CR>
+nmap <F16> :vsp \| :terminal<CR>
 
 "===============================================================================
 
