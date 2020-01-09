@@ -124,7 +124,8 @@ let g:fzf_colors =
 " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-nnoremap <leader>o :<C-u>Files<cr>
+nnoremap <leader>t :tabnew \| :Files<cr>
+nnoremap <leader>o :<C-u>:Files<cr>
 
 command! -bang -nargs=* FRg
    \ call fzf#vim#grep(
@@ -138,10 +139,10 @@ map <S-F3> :Rg<CR>
 map <F15> :Rg<CR>
 
 " Regular ripgrep search
-map <F3> :Rg 
+map <F3> :Rg<space>
 
 " Regular 'ripgrep' search using fzf
-nmap <leader><space> :FRg 
+nmap <leader><space> :FRg<space>
 
 "===============================================================================
 
@@ -172,6 +173,14 @@ nmap <F8> :setlocal spell! spelllang=pt_br<CR>
 "Mappings for termguicolors
 map <F10> :set termguicolors!<CR>
 
+" Split settings
+set splitbelow
+set splitright
+nmap <C-j> <C-w><C-j>
+nmap <C-k> <C-w><C-k>
+nmap <C-h> <C-w><C-h>
+nmap <C-l> <C-w><C-l>
+
 "Integrated terminal
 nmap <F4> :tabnew \| :terminal<CR>
 nmap <S-F4> :vsp \| :terminal<CR>
@@ -191,11 +200,11 @@ nmap <F16> :vsp \| :terminal<CR>
 "===============================================================================
 
 " ========== Ranger Mappings ==========
-nnoremap <silent> - :Ranger<CR>
+
 nnoremap <silent> <Leader>r :RangerCurrentFile<CR>
 
 "Open Ranger on a new tab
-nnoremap <silent> <Leader>t :tabnew \| RangerCurrentFile<CR>
+nnoremap <silent> - :tabnew \| RangerCurrentFile<CR>
 nnoremap <silent> <Leader>f :tabnew \| Ranger<CR>
 
 "Open ranger in a new split window
