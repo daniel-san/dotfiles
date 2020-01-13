@@ -33,6 +33,7 @@ runtime _configs/coc.vim
 "===============================================================================
 
 "Options
+let mapleader = '\'
 set encoding=utf-8
 set nobackup
 set noswapfile      " do not create swap (.swp) files
@@ -232,3 +233,6 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " ========== Coc Explorer ==========
 nmap <Leader>e :CocCommand explorer<CR>
+
+" ========== Auto-commands ==========
+autocmd BufWritePost init.vim source $MYVIMRC
