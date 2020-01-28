@@ -124,7 +124,8 @@ local virtualmachine    = "virtualbox"
 
 -- awesome variables
 awful.util.terminal = terminal
-awful.util.tagnames = {  "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }
+awful.util.tagnames = {  "", "", "", "", "", "", "", "", "", "" }
+--awful.util.tagnames = {  "一", "二", "三", "四", "五", "六", "七", "八", "九", "十" }
 --awful.util.tagnames = {  "➊", "➋", "➌", "➍", "➎", "➏", "➐", "➑", "➒", "➓" }
 --awful.util.tagnames = { "⠐", "⠡", "⠲", "⠵", "⠻", "⠿" }
 --awful.util.tagnames = { "⌘", "♐", "⌥", "ℵ" }
