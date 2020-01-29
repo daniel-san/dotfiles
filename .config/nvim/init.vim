@@ -126,7 +126,7 @@ let g:fzf_colors =
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 nnoremap <leader>t :tabnew \| :Files<cr>
-nnoremap <leader>o :<C-u>:Files<cr>
+nnoremap <C-p> :<C-u>:Files<cr>
 
 command! -bang -nargs=* FRg
    \ call fzf#vim#grep(
@@ -165,7 +165,7 @@ if filereadable(expand("~/.vimrc_background"))
 endif
 
 vnoremap <C-c> "*y :let @+=@*<CR>
-map <C-p> "+p
+map <A-p> "+p
 
 "Spell checker
 nmap <F7> :setlocal spell! spelllang=en_us<CR>
@@ -235,4 +235,7 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 nmap <Leader>e :CocCommand explorer<CR>
 
 " ========== Auto-commands ==========
-autocmd BufWritePost init.vim source $MYVIMRC
+augroup autosourcing
+    autocmd!
+    autocmd BufWritePost init.vim source $MYVIMRC
+augroup END
