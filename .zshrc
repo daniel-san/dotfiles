@@ -104,6 +104,7 @@ alias ls="exa"
 alias vim="nvim"
 alias vifm="/home/daniel/.config/vifm/scripts/vifmrun"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias tinker='php artisan tinker'
 
 # Xresources
 xrdb /home/daniel/.Xresources
@@ -129,3 +130,5 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
