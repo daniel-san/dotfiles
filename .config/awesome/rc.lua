@@ -119,7 +119,7 @@ local filemanager       = "pcmanfm"
 local mailclient        = "evolution"
 local mediaplayer       = "spotify"
 local scrlocker         = "slimlock"
-local terminal          = "kitty"
+local terminal          = "alacritty"
 local virtualmachine    = "virtualbox"
 
 -- awesome variables
