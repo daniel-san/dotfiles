@@ -1,0 +1,20 @@
+alias artisan="php artisan"
+alias serve="artisan serve"
+alias horizon="artisan horizon"
+
+#Laradock stuff
+alias laradock="cd ~/Projects/PHP/laradock"
+alias startwork="laradock; sudo docker-compose up -d nginx workspace redis"
+alias stopwork="laradock; sudo docker-compose down"
+function shell(){
+    current_dir=${PWD##*/}
+    current_dir_path=$PWD
+    if [[ $# == 0 ]]
+    then
+        laradock; sudo docker-compose exec --user=laradock workspace bash -c "cd $current_dir && bash -l" && cd $current_dir_path
+    else
+        laradock; sudo docker-compose exec --user=laradock workspace bash -c "cd $current_dir && bash -l -c '$*'" && cd $current_dir_path
+    fi
+}
+
+source ~/.rits_aliases
