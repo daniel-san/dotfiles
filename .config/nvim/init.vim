@@ -167,6 +167,9 @@ endif
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <A-p> "+p
 
+" Eslint
+nmap <F5> :CocCommand eslint.executeAutofix<CR>
+
 "Spell checker
 nmap <F7> :setlocal spell! spelllang=en_us<CR>
 nmap <F8> :setlocal spell! spelllang=pt_br<CR>
