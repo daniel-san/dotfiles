@@ -39,8 +39,10 @@ format-margin =
 format-offset =
 
 [colors]
+background = #292d3e
+
 ; Nord theme ============
-background = #2F343F
+background-light = #2F343F
 foreground = #f3f4f5
 alert = #d08770
 volume-min = #a3be8c
@@ -683,21 +685,21 @@ border-color = #00000000
 padding-left = 0
 padding-right = 1
 
-module-margin-left = 3
-module-margin-right = 3
+module-margin-left = 1
+module-margin-right = 1
 
 ; Enable support for inter-process messaging
 ; See the Messaging wiki page for more details.
 enable-ipc = true
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "mononoki:size=10;0"
+font-0 = "mononoki:size=8;0"
 font-1 = "FontAwesome:size=13;0"
 font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "FontAwesome5Brands:size=13;0"
 
-modules-left = ewmh
+modules-left = ewmh xmonad
 modules-center = xwindow
 modules-right = memory2 cpu2 date
 
@@ -1151,11 +1153,11 @@ type = internal/cpu
 interval = 1
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
-format-prefix-foreground = #cd1f3f
-format-underline = #cd1f3f
+format-prefix = " "
+format-prefix-foreground = #FFE585
+format-underline = #FFE585
 
-label-font = 3
+label-font = 1
 
 ; Available tags:
 ;   <label> (default)
@@ -1186,8 +1188,8 @@ date-alt = " %d-%m-%Y"
 time = %H:%M
 time-alt = %H:%M
 format-prefix = " "
-format-prefix-foreground = #c1941a
-format-underline = #c1941a
+format-prefix-foreground = #A3F7FF
+format-underline = #A3F7FF
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 label = %date% %time%
@@ -1231,11 +1233,12 @@ label-monitor = %name%
 label-active = %name%
 label-active-foreground = ${colors.foreground}
 label-active-background = ${colors.background}
-label-active-underline= #6790eb
+label-active-underline= #c93648
 label-active-padding = 2
 
 label-occupied = %name%
-label-occupied-background = ${colors.background}
+label-occupied-background = ${colors.foreground}
+label-occupied-underline= #c93648
 label-occupied-padding = 2
 
 label-urgent = %name%
@@ -1848,3 +1851,11 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
 ###############################################################################
+
+[module/xmonad]
+type = custom/script
+exec = xmonad-log
+
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+tail = true
