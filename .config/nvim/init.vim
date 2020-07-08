@@ -26,6 +26,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'jremmen/vim-ripgrep'
 Plug 'Chiel92/vim-autoformat'
+Plug 'preservim/nerdcommenter' " Plugin for comments
 call plug#end()
 
 runtime _configs/coc.vim
