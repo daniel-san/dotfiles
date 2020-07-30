@@ -30,12 +30,12 @@ pkill nm-applet
 xsetroot -cursor_name left_ptr &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 xrandr --output DVI-D-0 --primary --auto --right-of HDMI-1
-redshift-gtk -t 3800:3800 &
+#redshift-gtk -t 3800:3800 &
 volumeicon &
 nm-applet &
 nitrogen --restore &
 compton &
-dropbox start & 
+megasync &
 xrdb .Xresources
 
 while true; do

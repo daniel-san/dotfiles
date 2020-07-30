@@ -363,9 +363,12 @@ globalkeys = my_table.join(
         {description = "exit", group = "hotkeys"}),
     awful.key({ modkey }, "Escape", function () awful.util.spawn( "xkill" ) end,
         {description = "Kill proces", group = "hotkeys"}),
+    awful.key({ modkey }, "Insert", function () awful.util.spawn( "/home/daniel/scripts/generateCpf.sh" ) end,
+        {description = "Generate cpf script" , group = "hotkeys" }),
+
 
     -- super + shift + ...
-    awful.key({ modkey, "Shift"   }, "Return", function() awful.util.spawn( filemanager ) end),
+    awful.key({ modkey, "Shift"   }, "Return", function() awful.util.spawn( "tabbed alacritty --embed" ) end),
 
 
     -- ctrl + shift + ...
