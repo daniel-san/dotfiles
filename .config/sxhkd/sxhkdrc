@@ -1,0 +1,5 @@
+super + v
+    $TERMINAL -e /home/daniel/.config/vifm/scripts/vifmrun
+
+super + F1
+    $TERMINAL -e pulsemixer

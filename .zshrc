@@ -87,6 +87,7 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 export EDITOR=nvim
+export TERMINAL=alacritty
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

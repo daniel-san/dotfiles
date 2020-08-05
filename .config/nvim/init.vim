@@ -18,7 +18,7 @@ Plug 'vim-airline/vim-airline-themes' " status line tunada
 Plug 'editorconfig/editorconfig-vim'
 Plug 'honza/vim-snippets', { 'as': 'vim-snippets'}
 Plug 'APZelos/blamer.nvim'
-Plug 'wakatime/vim-wakatime'
+"Plug 'wakatime/vim-wakatime'
 Plug 'joshdick/onedark.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -242,4 +242,5 @@ nmap <Leader>e :CocCommand explorer<CR>
 augroup autosourcing
     autocmd!
     autocmd BufWritePost init.vim source $MYVIMRC
+    autocmd BufWritePost *sxhkdrc !killall sxhkd; setsid sxhkd &
 augroup END
