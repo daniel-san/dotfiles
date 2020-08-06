@@ -1,1 +1,1 @@
-export TERMINAL=alacritty
+.zprofile
