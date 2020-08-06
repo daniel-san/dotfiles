@@ -3,3 +3,6 @@ super + v
 
 super + F1
     $TERMINAL -e pulsemixer
+
+super + shift + l
+    lutris

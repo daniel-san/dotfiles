@@ -22,9 +22,11 @@ cpu(){
 }
 
 #killing processes that will spawn more than once
-pkill redshift-gtk
+#pkill redshift-gtk
 pkill volumeicon
 pkill nm-applet
+pkill megasync
+killall sxhkd
 
 #spawning the real autostart processes
 xsetroot -cursor_name left_ptr &
@@ -36,6 +38,7 @@ nm-applet &
 nitrogen --restore &
 compton &
 megasync &
+sxhkd &
 xrdb .Xresources
 
 while true; do
