@@ -1,3 +1,4 @@
+alias caw="cal -w"
 alias artisan="php artisan"
 alias serve="artisan serve"
 alias horizon="artisan horizon"
@@ -6,6 +7,14 @@ alias horizon="artisan horizon"
 alias laradock="cd ~/Projects/PHP/laradock"
 alias startwork="laradock; sudo docker-compose up -d nginx workspace redis"
 alias stopwork="laradock; sudo docker-compose down"
+
+function laradock-manage(){
+    current_dir=$PWD;
+    laradock;
+    sudo docker-compose $*;
+    cd $current_dir;
+}
+
 function shell(){
     current_dir=${PWD##*/}
     current_dir_path=$PWD
@@ -17,4 +26,16 @@ function shell(){
     fi
 }
 
+function shell_root(){
+    current_dir=${PWD##*/}
+    current_dir_path=$PWD
+    if [[ $# == 0 ]]
+    then
+        laradock; sudo docker-compose exec workspace bash -c "cd $current_dir && bash -l" && cd $current_dir_path
+    else
+        laradock; sudo docker-compose exec workspace bash -c "cd $current_dir && bash -l -c '$*'" && cd $current_dir_path
+    fi
+}
+
+source ~/.git-flow_aliases
 source ~/.rits_aliases

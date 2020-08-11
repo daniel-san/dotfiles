@@ -1,3 +1,6 @@
+super + shift + w
+    brave
+
 super + v
     $TERMINAL -e /home/daniel/.config/vifm/scripts/vifmrun
 
@@ -6,3 +9,9 @@ super + F1
 
 super + shift + l
     lutris
+
+#### Keypad binds ####
+# keypad keys use a implicit 'shift', so KP_1 is actually (shift + KP_1)
+super + KP_0
+    $HOME/Apps/sublime_merge/sublime_merge
+

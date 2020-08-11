@@ -87,7 +87,6 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 export EDITOR=nvim
-export TERMINAL=alacritty
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -100,7 +99,7 @@ export TERMINAL=alacritty
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=$PATH:$HOME/.config/composer/vendor/bin:$HOME/scripts:$HOME/.local
+export PATH="$PATH:$HOME/.config/composer/vendor/bin:$HOME/scripts:$HOME/.local:$HOME/.poetry/bin"
 alias ls="exa"
 alias vim="nvim"
 alias vifm="/home/daniel/.config/vifm/scripts/vifmrun"

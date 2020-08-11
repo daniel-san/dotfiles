@@ -154,7 +154,6 @@ let g:blamer_enabled = 1
 
 "Theme
 set background=dark
-colorscheme dracula
 highlight ColorColumn ctermbg=1
 highlight Normal ctermbg=none
 
@@ -170,6 +169,9 @@ map <A-p> "+p
 
 " Eslint
 nmap <F5> :CocCommand eslint.executeAutofix<CR>
+
+" Disable/enable blamer plugin
+nmap <silent><F6> :let g:blamer_enabled = !g:blamer_enabled<CR>
 
 "Spell checker
 nmap <F7> :setlocal spell! spelllang=en_us<CR>
@@ -201,6 +203,9 @@ nmap <silent><F11> :tabmove -1 <CR>
 
 "kitty specific
 nmap <F16> :vsp \| :terminal<CR>
+
+"buffer stuff
+nmap <Leader>b :b<space>
 
 "===============================================================================
 
