@@ -36,7 +36,7 @@ xrandr --output DVI-D-0 --primary --auto --right-of HDMI-1
 volumeicon &
 nm-applet &
 nitrogen --restore &
-compton &
+picom --config $HOME/.config/compton.conf &
 megasync &
 sxhkd &
 xrdb .Xresources

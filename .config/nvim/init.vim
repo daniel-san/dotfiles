@@ -18,7 +18,7 @@ Plug 'vim-airline/vim-airline-themes' " status line tunada
 Plug 'editorconfig/editorconfig-vim'
 Plug 'honza/vim-snippets', { 'as': 'vim-snippets'}
 Plug 'APZelos/blamer.nvim'
-"Plug 'wakatime/vim-wakatime'
+Plug 'wakatime/vim-wakatime'
 Plug 'joshdick/onedark.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -136,6 +136,24 @@ command! -bang -nargs=* FRg
                \ : fzf#vim#with_preview('right:50%:hidden', '?'),
        \ <bang>0)
 
+function! s:list_buffers()
+    redir => list
+    silent ls
+    redir END
+    return split(list, "\n")
+endfunction
+
+function! s:delete_buffers(lines)
+    execute 'bwipeout!' join(map(a:lines, {_, line -> split(line)[0]}))
+endfunction
+
+command! BDelete call fzf#run(fzf#wrap({
+    \ 'source': s:list_buffers(),
+    \ 'sink*': { lines -> s:delete_buffers(lines) },
+    \ 'options': '--multi --reverse --bind ctrl-a:select-all+accept'
+\ }))
+
+
 " Search the word under cursor with ripgrep
 map <S-F3> :Rg<CR>
 map <F15> :Rg<CR>
@@ -159,6 +177,7 @@ highlight Normal ctermbg=none
 
 set termguicolors
 
+" Base16 theme
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
@@ -205,19 +224,20 @@ nmap <silent><F11> :tabmove -1 <CR>
 nmap <F16> :vsp \| :terminal<CR>
 
 "buffer stuff
-nmap <Leader>b :b<space>
+nmap <silent><Leader>b :Buffers<CR>
+
+" Open a new file on current buffer
+nnoremap <silent> <Leader>f :Files<CR>
 
 "===============================================================================
 
 " ========== Ranger Mappings ==========
-
 nnoremap <silent> <Leader>r :RangerCurrentFile<CR>
 
 "Open Ranger on a new tab
 nnoremap <silent> - :tabnew \| RangerCurrentFile<CR>
-nnoremap <silent> <Leader>f :tabnew \| Ranger<CR>
 
-"Open ranger in a new split window
+
 " Ranger on Vertial Split
 nnoremap <silent> <Leader>v :vsp \| RangerCurrentFile<CR>
 
