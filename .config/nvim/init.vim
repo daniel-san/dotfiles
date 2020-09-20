@@ -30,6 +30,7 @@ Plug 'preservim/nerdcommenter' " Plugin for comments
 call plug#end()
 
 runtime _configs/coc.vim
+runtime _configs/airline.vim
 
 "===============================================================================
 
