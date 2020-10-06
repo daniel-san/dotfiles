@@ -16,6 +16,7 @@ Plug 'ntpeters/vim-better-whitespace' " Linhas de identação e remoção de esp
 Plug 'vim-airline/vim-airline' " status line
 Plug 'vim-airline/vim-airline-themes' " status line tunada
 Plug 'editorconfig/editorconfig-vim'
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets', { 'as': 'vim-snippets'}
 Plug 'APZelos/blamer.nvim'
 Plug 'wakatime/vim-wakatime'
@@ -30,7 +31,8 @@ Plug 'preservim/nerdcommenter' " Plugin for comments
 call plug#end()
 
 runtime _configs/coc.vim
-runtime _configs/airline.vim
+runtime _configs/ultisnips.vim
+"runtime _configs/airline.vim
 
 "===============================================================================
 
