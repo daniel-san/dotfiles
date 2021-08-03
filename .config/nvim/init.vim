@@ -264,7 +264,7 @@ let g:coc_snippet_prev = '<c-k>'
 imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " ========== Coc Explorer ==========
-nmap <Leader>e :CocCommand explorer<CR>
+nmap <Leader>e :CocCommand explorer --position right<CR>
 
 " ========== Auto-commands ==========
 augroup autosourcing
@@ -272,3 +272,7 @@ augroup autosourcing
     autocmd BufWritePost init.vim source $MYVIMRC
     autocmd BufWritePost *sxhkdrc !killall sxhkd; setsid sxhkd &
 augroup END
+
+hi TabLineSel ctermfg=8 ctermbg=18 guifg=#FFF guibg=#AA4252
+
+nmap <Leader>5 bvwh"tyy :execute '! ./vendor/bin/phpunit --filter '.shellescape(@t, 1)<CR>
