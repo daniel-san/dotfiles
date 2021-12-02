@@ -28,10 +28,12 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jremmen/vim-ripgrep'
 Plug 'Chiel92/vim-autoformat'
 Plug 'preservim/nerdcommenter' " Plugin for comments
+Plug 'phaazon/hop.nvim'
 call plug#end()
 
 runtime _configs/coc.vim
 runtime _configs/ultisnips.vim
+runtime _configs/hop.vim
 "runtime _configs/airline.vim
 
 "===============================================================================
@@ -162,7 +164,8 @@ map <S-F3> :Rg<CR>
 map <F15> :Rg<CR>
 
 " Regular ripgrep search
-map <F3> :Rg<space>
+"map <F3> :Rg<space>
+map <F3> :FRg<space>
 
 " Regular 'ripgrep' search using fzf
 nmap <leader><space> :FRg<space>
@@ -273,6 +276,10 @@ augroup autosourcing
     autocmd BufWritePost *sxhkdrc !killall sxhkd; setsid sxhkd &
 augroup END
 
-hi TabLineSel ctermfg=8 ctermbg=18 guifg=#FFF guibg=#AA4252
+"hi TabLineSel ctermfg=8 ctermbg=18 guifg=#FFF guibg=#AA4252
+hi TabLineSel ctermfg=8 ctermbg=18 guifg=#FFF guibg=#C93648
 
 nmap <Leader>5 bvwh"tyy :execute '! ./vendor/bin/phpunit --filter '.shellescape(@t, 1)<CR>
+
+nmap <A-l> 30zl
+nmap <A-h> 30zh
