@@ -39,7 +39,8 @@ runtime _configs/hop.vim
 "===============================================================================
 
 "Options
-let mapleader = '\'
+nnoremap <SPACE> <Nop>
+let mapleader = ' '
 set encoding=utf-8
 set nobackup
 set noswapfile      " do not create swap (.swp) files
