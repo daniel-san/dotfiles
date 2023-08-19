@@ -1,0 +1,9 @@
+matches:
+  - trigger: ":cpf"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "node /home/daniel/scripts/node/cpfGenerator.js"
+          shell: wsl

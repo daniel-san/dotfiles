@@ -279,7 +279,9 @@ augroup autosourcing
 augroup END
 
 "hi TabLineSel ctermfg=8 ctermbg=18 guifg=#FFF guibg=#AA4252
-hi TabLineSel ctermfg=8 ctermbg=18 guifg=#FFF guibg=#C93648
+if (!exists('g:colors_name') || g:colors_name == 'base16-nord')
+    hi TabLineSel ctermfg=8 ctermbg=18 guifg=#FFF guibg=#C93648
+endif
 
 nmap <Leader>5 bvwh"tyy :execute '! ./vendor/bin/phpunit --filter '.shellescape(@t, 1)<CR>
 
