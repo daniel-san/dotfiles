@@ -44,6 +44,24 @@ matches:
         params:
           format: "%m/%d/%Y"
 
+  - trigger: ":routeprefix"
+    replace: "Route::prefix('/')->group(function () {
+      $|$
+    });"
+
+  - trigger: ":routeget"
+    replace: "Route::get('/$|$', [])->name('');"
+
+  - trigger: ":routepost"
+    replace: "Route::post('/$|$', [])->name('');"
+
+  - trigger: ":routeput"
+    replace: "Route::put('/$|$', [])->name('');"
+
+  - trigger: ":routedel"
+    replace: "Route::delete('/$|$', [])->name('');"
+
+
   # Shell command Replacements
   - trigger: ":shell"
     replace: "{{output}}"
