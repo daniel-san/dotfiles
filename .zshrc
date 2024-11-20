@@ -126,11 +126,14 @@ ex ()
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="$PATH:$HOME/.config/composer/vendor/bin:$HOME/scripts:$HOME/.local:$HOME/.poetry/bin"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin:$HOME/scripts:$HOME/.local:$HOME/.poetry/bin:$HOME/.local/bin"
 alias ls="exa --color=always --group-directories-first"
 alias la="ls -a"
-alias vim="/home/daniel/apps/nvim.appimage"
-alias vifm="/home/daniel/.config/vifm/scripts/vifmrun"
+if [ -f $HOME/apps/nvim.appimage ]; then
+    alias vim="$HOME/apps/nvim.appimage"
+    export MANPAGER="$HOME/apps/nvim.appimage +Man!"
+fi
+alias vifm="$HOME/.config/vifm/scripts/vifmrun"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias tinker='php artisan tinker'
 
