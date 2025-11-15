@@ -1,7 +1,9 @@
+#!/bin/zsh
 alias caw="cal -w"
 alias artisan="php artisan"
 alias serve="artisan serve"
 alias horizon="artisan horizon"
+alias lz="lazygit"
 
 #Laradock stuff
 alias laradock="cd ~/Projects/PHP/laradock"
@@ -47,4 +49,9 @@ fi
 
 if [ -f ~/.work_aliases ]; then
     . ~/.work_aliases
+fi
+
+
+if [ -f ~/.wsl_aliases ]; then
+    . ~/.wsl_aliases
 fi

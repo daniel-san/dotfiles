@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/daniel/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -127,7 +127,7 @@ ex ()
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$PATH:$HOME/.config/composer/vendor/bin:$HOME/scripts:$HOME/.local:$HOME/.poetry/bin:$HOME/.local/bin"
-alias ls="exa --color=always --group-directories-first"
+alias ls="eza --color=always --group-directories-first"
 alias la="ls -a"
 if [ -f $HOME/apps/nvim.appimage ]; then
     alias vim="$HOME/apps/nvim.appimage"
@@ -139,13 +139,18 @@ alias tinker='php artisan tinker'
 
 # Xresources
 if [ -f ~/.Xresources ]; then
-    xrdb /home/daniel/.Xresources
+    xrdb ~/.Xresources
 fi
 
-# Zsh aliases
-if [ -f ~/.zsh_aliases ]; then
-    . ~/.zsh_aliases
+# Zsh aliases and functions
+if [ -d ~/.zshrc.d ]; then
+    for rc in ~/.zshrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
 fi
+unset rc
 
 ### Added by Zinit's installer
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
