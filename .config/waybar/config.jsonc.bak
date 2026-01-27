@@ -1,0 +1,11 @@
+{
+    "modules-left": ["hyprland/workspaces"],
+    "hyprland-workspaces": {
+        "format": "{icon}",
+	"on-click": "activate",
+	"all-outputs": true,
+	"persistent-workspaces": {
+            "*": 10
+	}
+    }
+}
