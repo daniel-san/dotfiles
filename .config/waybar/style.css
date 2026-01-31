@@ -93,6 +93,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
+#custom-gpu-temp,
 #mpd {
     padding: 0 10px;
     color: #ffffff;
@@ -324,4 +325,8 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
+}
+
+#custom-gpu-temp {
+    background-color: #76b900;
 }
