@@ -172,7 +172,13 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         source "$BASE16_SHELL/profile_helper.sh"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# fzf setup: support both git-based and package-manager installs
+if [[ -f ~/.fzf.zsh ]]; then
+  source ~/.fzf.zsh
+else
+  [[ -f /usr/share/fzf/key-bindings.zsh ]] && source /usr/share/fzf/key-bindings.zsh
+  [[ -f /usr/share/fzf/completion.zsh   ]] && source /usr/share/fzf/completion.zsh
+fi
 
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
