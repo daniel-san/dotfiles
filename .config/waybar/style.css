@@ -95,6 +95,7 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #custom-gpu-temp,
+#custom-power,
 #mpd {
     padding: 0 10px;
     color: #ffffff;
