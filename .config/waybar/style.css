@@ -333,3 +333,25 @@ label:focus {
 #custom-gpu-temp {
     background-color: #76b900;
 }
+
+/* mega-health widget styles */
+#custom-mega {
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+#custom-mega.ok {
+    color: #7ee787; /* green */
+}
+
+#custom-mega.syncing {
+    color: #79c0ff; /* blue */
+}
+
+#custom-mega.error {
+    color: #ff7b72; /* red */
+}
+
+#custom-mega.loggedout {
+    color: #e3b341; /* yellow */
+}
