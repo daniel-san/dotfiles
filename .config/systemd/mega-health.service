@@ -1,0 +1,6 @@
+[Unit]
+Description=MEGA Sync Health Check
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/mega-health-check.sh
