@@ -34,9 +34,18 @@ ISSUES=""
 ACTIVE_TRANSFERS=0
 
 # Detect sync issues
-if echo "$SYNC_OUTPUT" | grep -qiE "disabled|failed|error"; then
-    ISSUES+="\n• Sync error or disabled sync detected"
-fi
+while read -r ID LOCAL REMOTE RUN_STATE STATUS ERROR REST; do
+    # Skip header or empty lines
+    [[ "$ID" == "ID" || -z "$ID" ]] && continue
+
+    if [[ "$STATUS" != "Synced" ]]; then
+        ISSUES+="\n• Sync not synced (status: $STATUS)"
+    fi
+
+    if [[ "$ERROR" != "NO" ]]; then
+        ISSUES+="\n• Sync error reported"
+    fi
+done < <(echo "$SYNC_OUTPUT")
 
 # Detect transfer problems
 if echo "$TRANSFER_OUTPUT" | grep -qi "FAILED"; then
@@ -84,4 +93,3 @@ else
     fi
     rm -f "$TRANSFER_STATE"
 fi
-
