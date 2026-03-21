@@ -29,9 +29,9 @@
     //"sway/language",
     //"battery",
     //"battery#bat2",
-    "clock",
     "tray",
     "custom/mega",
+    "clock",
     "custom/power",
   ],
   "hyprland-workspaces": {
