@@ -94,8 +94,8 @@ hl.env("HYPRCURSOR_SIZE", "32")
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
     general = {
-        gaps_in          = 5,
-        gaps_out         = 3,
+        gaps_in          = 2,
+        gaps_out         = 2,
 
         border_size      = 2,
 
@@ -113,12 +113,12 @@ hl.config({
         -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
         allow_tearing    = false,
 
-        layout           = "master",
+        layout           = "dwindle",
     },
 
     decoration = {
         rounding         = 5,
-        rounding_power   = 2,
+        rounding_power   = 0,
 
         -- Change transparency of focused and unfocused windows
         active_opacity   = 1.0,
@@ -279,7 +279,7 @@ hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + SHIFT + Z",
     hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
 )
-hl.bind(mainMod .. " + X", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + SHIFT + X", hl.dsp.exec_cmd("hyprlock"))
 
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
