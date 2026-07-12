@@ -1,0 +1,13 @@
+#!/bin/zsh
+# Core aliases (previously in .zshrc)
+
+alias ls="eza --color=always --group-directories-first"
+alias la="ls -a"
+
+if [ -f $HOME/apps/nvim.appimage ]; then
+    alias vim="$HOME/apps/nvim.appimage"
+fi
+
+alias vifm="$HOME/.config/vifm/scripts/vifmrun"
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias tinker='php artisan tinker'
