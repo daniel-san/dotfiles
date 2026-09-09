@@ -5,6 +5,8 @@ alias serve="artisan serve"
 alias horizon="artisan horizon"
 alias lz="lazygit"
 
+alias playlist-yt="yt-dlp -o '%(playlist)s/%(playlist_index)03d - %(title)s.%(ext)s'"
+
 #Laradock stuff
 alias laradock="cd ~/Projects/PHP/laradock"
 alias startwork="laradock; sudo docker-compose up -d nginx workspace redis"
